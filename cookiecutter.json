@@ -1,13 +1,15 @@
 {
-    "full_name": "Mandeep",
-    "email": "info@mandeep.xyz",
-    "github_username": "mandeep",
+    "full_name": "your_name",
+    "email": "your@mail.com",
+    "github_username": "your_github",
     "repo_name": "cookiecutter_PyQt5",
-    "package_name": "{{ cookiecutter.repo_name.lower().replace(' ', '_') }}",
-    "application_name": "application",
-    "application_title": "Template",
+    "package_name": "{{ cookiecutter.repo_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+    "application_name": "Application",
+    "mainwindow_name": "Mainwindow",
+    "application_title": "{{ cookiecutter.application_name}}",
     "project_short_description": "A PyQt5 GUI application",
     "version": "0.0.1",
     "insert_toolbar": "yes",
-    "insert_statusbar": "yes"
+    "insert_statusbar": "yes",
+    "sphinx": "yes"
 }

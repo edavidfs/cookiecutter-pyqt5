@@ -1,0 +1,5 @@
+# App
+PyQt5
+
+# Docs
+sphinx

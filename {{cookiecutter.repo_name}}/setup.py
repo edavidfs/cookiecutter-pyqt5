@@ -1,7 +1,12 @@
 from setuptools import setup
+import os
+
+ret = os.system("pyuic5 ./{{ cookiecutter.package_name }}/ui_designer/mainwindow.ui > {{ cookiecutter.package_name }}/ui_designer/ui_mainwindow.py")
+ret = os.system("pyrcc5 ./{{ cookiecutter.package_name }}/ui_designer//resources.qrc > {{ cookiecutter.package_name }}/ui_designer/resources_rc.py")
 
 requirements = [
-    # TODO: put your package requirements here
+    'PyQt5',
+
 ]
 
 test_requirements = [
